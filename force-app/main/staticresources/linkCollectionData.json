@@ -1,0 +1,19 @@
+{
+	"newsLinks": [
+		{ "label": "日本経済新聞", "url": "https://www.nikkei.com/", "iconName": "utility:announcement" },
+		{ "label": "Yahoo!ニュース", "url": "https://news.yahoo.co.jp/", "iconName": "utility:world" },
+		{ "label": "朝日新聞デジタル", "url": "https://www.asahi.com/", "iconName": "utility:news" }
+	],
+	"toolLinks": [
+		{ "label": "GitHub", "url": "https://github.com", "iconName": "utility:apex" },
+		{ "label": "Slack", "url": "https://slack.com", "iconName": "utility:chat" },
+		{ "label": "Notion", "url": "https://www.notion.so/", "iconName": "utility:table" }
+	],
+	"contactInfo": [
+		{ "label": "Google お問い合わせ", "url": "https://support.google.com/", "iconName": "utility:email" }
+	],
+	"companyLinks": [
+		{ "label": "Salesforce Japan", "url": "https://www.salesforce.com/jp/", "iconName": "standard:account" },
+		{ "label": "マネーフォワード", "url": "https://corp.moneyforward.com/", "iconName": "standard:account" }
+	]
+}

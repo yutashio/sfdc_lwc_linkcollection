@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>64.0</apiVersion>
+	<isExposed>true</isExposed>
+	<targets>
+		<target>lightning__AppPage</target>
+		<target>lightning__HomePage</target>
+		<target>lightning__RecordPage</target>
+		<target>lightning__UtilityBar</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__AppPage, lightning__RecordPage, lightning__HomePage, lightning__UtilityBar">
+		<property name="title" type="String" label="タイトル"/>
+		<property name="collectionKey" type="String" label="コレクションキー名" description="JSONファイルの配列のキー名を指定してください。"/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

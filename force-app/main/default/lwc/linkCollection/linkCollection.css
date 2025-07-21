@@ -1,0 +1,19 @@
+.linkGroup {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+}
+
+.linkItem {
+	background-color: #f4f6f9;
+	padding: 12px;
+	border-radius: 6px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	display: flex;
+	align-items: flex-start;
+	word-break: break-word;
+}
+
+.text-prewrap {
+	white-space: pre-wrap;
+}
