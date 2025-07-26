@@ -8,12 +8,5 @@
 		{ "label": "GitHub", "url": "https://github.com", "iconName": "utility:apex" },
 		{ "label": "Slack", "url": "https://slack.com", "iconName": "utility:chat" },
 		{ "label": "Notion", "url": "https://www.notion.so/", "iconName": "utility:table" }
-	],
-	"contactInfo": [
-		{ "label": "Google お問い合わせ", "url": "https://support.google.com/", "iconName": "utility:email" }
-	],
-	"companyLinks": [
-		{ "label": "Salesforce Japan", "url": "https://www.salesforce.com/jp/", "iconName": "standard:account" },
-		{ "label": "マネーフォワード", "url": "https://corp.moneyforward.com/", "iconName": "standard:account" }
 	]
 }
