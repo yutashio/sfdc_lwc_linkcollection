@@ -1,17 +1,40 @@
 <template>
-	<lightning-card title={title}>
-		<template if:true={links}>
-			<div class="linkGroup">
-				<template for:each={links} for:item="link">
-					<div key={link.url} class="linkItem">
-						<lightning-icon icon-name={link.iconName} size="small" class="slds-m-right_small"></lightning-icon>
-						<a href={link.url} target="_blank" class="slds-text-link">{link.label}</a>
-					</div>
-				</template>
-			</div>
-		</template>
-		<template if:true={error}>
-			<p class="slds-text-color_error slds-p-around_small text-prewrap">{error}</p>
-		</template>
-	</lightning-card>
+	<template if:true={isCollapsible}>
+		<lightning-card hide-header="true">
+			<lightning-accordion allow-multiple-sections-open>
+				<lightning-accordion-section label={title}>
+					<template if:true={links}>
+						<div class="linkGroup">
+							<template for:each={links} for:item="link">
+								<div key={link.url} class="linkItem">
+									<lightning-icon icon-name={link.iconName} size="small" class="slds-m-right_small"></lightning-icon>
+									<a href={link.url} target="_blank" class="slds-text-link">{link.label}</a>
+								</div>
+							</template>
+						</div>
+					</template>
+					<template if:true={error}>
+						<p class="slds-text-color_error slds-p-around_small text-prewrap">{error}</p>
+					</template>
+				</lightning-accordion-section>
+			</lightning-accordion>
+		</lightning-card>
+	</template>
+	<template if:false={isCollapsible}>
+		<lightning-card title={title}>
+			<template if:true={links}>
+				<div class="linkGroup">
+					<template for:each={links} for:item="link">
+						<div key={link.url} class="linkItem">
+							<lightning-icon icon-name={link.iconName} size="small" class="slds-m-right_small"></lightning-icon>
+							<a href={link.url} target="_blank" class="slds-text-link">{link.label}</a>
+						</div>
+					</template>
+				</div>
+			</template>
+			<template if:true={error}>
+				<p class="slds-text-color_error slds-p-around_small text-prewrap">{error}</p>
+			</template>
+		</lightning-card>
+	</template>
 </template>

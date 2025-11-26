@@ -12,6 +12,7 @@
 		<targetConfig targets="lightning__AppPage, lightning__RecordPage, lightning__HomePage, lightning__UtilityBar">
 		<property name="title" type="String" label="タイトル"/>
 		<property name="collectionKey" type="String" label="コレクションキー名" description="JSONファイルの配列のキー名を指定してください。"/>
+			<property name="isCollapsible" type="Boolean" default="false" label="折り畳みを有効にする" />
 		</targetConfig>
 	</targetConfigs>
 </LightningComponentBundle>
