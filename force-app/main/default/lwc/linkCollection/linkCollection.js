@@ -4,6 +4,7 @@ import linkCollectionData from '@salesforce/resourceUrl/linkCollectionData';
 export default class LinkCollection extends LightningElement {
 	@api title; //コンポーネントのタイトル
 	@api collectionKey; //JSONファイルの配列のキー名
+	@api isCollapsible = false; //折り畳みの有効化
 	links = [];
 	error;
 
